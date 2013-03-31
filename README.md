@@ -24,36 +24,36 @@ All Game rules are based on wikipedia blackjack page. Some choices of variant:
 Design
 ------
 
--   blackjack.rb
+-   **blackjack.rb: **
     allow users to play game multiple times and keep track of a list of users
 
--   game.rb
+-   **game.rb: ** 
     the bulk of the logic for the game, a game is defined as from the bet
     to the time where all the players has won or lost
 
--   deck.rb
+-   **deck.rb: **
     deck of cards, players and dealer draw cards from this object
 
--   card.rb
+-   **card.rb: **
     simple representation of cards
 
--   participant.rb
+-   **participant.rb: **
     superclass or all participants, dealer is a participant, player is a
     subtype of participant
 
--   player.rb
+-   **player.rb: **
     extends participant and add money operations
 
--   hand.rb
+-   **hand.rb: **
     collection of cards at players hand
     each player can have 2 hand because of splitting
     this object handles calculation on the cards
-        
--   string.rb
+ 
+-   **string.rb: **
     add a missing function in String object
 
--   util.rb
+-   **util.rb: **
     provides some io helper methods
 
--   driver.rb
+-   **driver.rb: **
     to run the game
